@@ -1,0 +1,60 @@
+body {
+  font-family: 'Sofia', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.background {
+  backface-visibility: visible;
+  background-color: #2cbfec;
+  border-radius: 10%;
+  width: 100%;
+  height: auto;
+}
+#titulo2{
+  font-variant: small-caps;
+  font-size: 3vw;
+  text-align: center;
+  text-shadow: 2px 2px 5px #8db600;
+  font-family: "Sofia", sans-serif;
+}
+
+.msm{
+  
+  font-size: 5vw;
+  text-align: center;
+  text-shadow: 2px 2px 5px #f55087;
+  font-family: "Sofia", sans-serif;
+}
+
+#titulo1 {
+  margin-top: 10px;
+  font-variant: small-caps;
+  font-size: 7vw;
+  text-align: center;
+  text-shadow: 2px 2px 5px #5c28a0;
+  font-family: "Sofia", sans-serif;
+}
