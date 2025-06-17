@@ -1,53 +1,61 @@
 body {
-  font-family: 'Sofia', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
+ font-family: Arial, sans-serif;
+ text-align: center;
+ margin: 0;
+ padding: 20px;
+ background-color: #f0f0f0;
+ }
+
+h1 {
+margin-bottom: 5px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.parrafo 
+{
+margin-bottom: 20px;
 }
 
-#main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  height: auto;
+.grid {
+ display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+max-width: 800px;
+margin: 0 auto;
 }
+
+.card {
+background-color: white;
+border-radius: 10px;
+padding: 15px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+.card button {
+ margin-top: 10px;
+ padding: 10px 20px;
+ font-size: 14px;
+ cursor: pointer;
+ background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+ }
+
+.card button:hover {
+ background-color: #0056b3;
+}        
 
 .background {
   backface-visibility: visible;
-  background-color: #2cbfec;
+  background-color: #369bee;
   border-radius: 10%;
   width: 100%;
   height: auto;
-}
-#titulo2{
-  font-variant: small-caps;
-  font-size: 3vw;
-  text-align: center;
-  text-shadow: 2px 2px 5px #8db600;
-  font-family: "Sofia", sans-serif;
-}
-
-.msm{
-  
-  font-size: 5vw;
-  text-align: center;
-  text-shadow: 2px 2px 5px #f55087;
-  font-family: "Sofia", sans-serif;
 }
 
 #titulo1 {
@@ -55,6 +63,41 @@ body {
   font-variant: small-caps;
   font-size: 7vw;
   text-align: center;
-  text-shadow: 2px 2px 5px #5c28a0;
+  text-shadow: 2px 2px 5px #732fe2;
   font-family: "Sofia", sans-serif;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+}
+
+.cerrar:hover {
+    color: #000;
 }
