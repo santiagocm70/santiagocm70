@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="background" id="main">
+    <head>
+        <meta charset="utf-8">
+        <link href="./css/diseño.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="./js/script.js"></script>
+
+        <title>Presentación de graficas  </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="background">
+
+    <h1 id="titulo1">Ventas de tacos</h1>
+    <p class="descripcion">Presione el botón correspondiente para ver la explicación de las gráficas</p>
+
+    <div class="grid">
+        <div class="card">
+            <img src="./imagenes/barras.png" alt="Gráfica de Barras">
+           <button onclick="mostrarModal('barras')">Ver explicación</button>
+        </div>
+
+        <div class="card">
+            <img src="./imagenes/Histograma.png" alt="Riesgos">
+            <button onclick="mostrarModal('histograma')">Ver explicación</button>
+        </div>
+
+        <div class="card">
+            <img src="./imagenes/Distribuciom.png" alt="Barras">
+            <button onclick="mostrarModal('boxplot')">Ver explicación</button>
+        </div>
+
+        <div class="card">
+            <img src="./imagenes/Mapa calor.png" alt="Tendencia">
+            <button onclick="mostrarModal('heatmap')">Ver explicación</button>
+        </div>
+    </div>
+
+   <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalDescripcion"></p>
+            <div id="modalAnalisis"></div>
+            <p id="modalConclusion"></p>
+        </div>
+    </div>
+</body>
+</html>
